@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 
 import 'widgets/account_balance.dart';
+import 'widgets/my_card.dart';
 import 'widgets/shortcut_scrollbar.dart';
 import '../themes/theme_colors.dart';
 
@@ -24,6 +25,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           AccountBalance(),
           ShortcutScrollbar(),
+          MyCard(),
         ],
       ),
     );
