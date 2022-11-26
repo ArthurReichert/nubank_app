@@ -3,6 +3,8 @@
 import 'package:flutter/material.dart';
 
 import 'widgets/account_balance.dart';
+import 'widgets/shortcut_scrollbar.dart';
+import '../themes/theme_colors.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -15,10 +17,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        backgroundColor: AppColor.primaryColor,
+      ),
       body: Column(
         children: [
           AccountBalance(),
+          ShortcutScrollbar(),
         ],
       ),
     );

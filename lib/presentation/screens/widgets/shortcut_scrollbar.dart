@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'shortchut_scrollbar/shortcut_scrollbar_item.dart';
+
 class ShortcutScrollbar extends StatefulWidget {
   const ShortcutScrollbar({Key? key}) : super(key: key);
 
@@ -14,9 +16,20 @@ class _ShortcutScrollbarState extends State<ShortcutScrollbar> {
       child: SingleChildScrollView(
         scrollDirection: Axis.horizontal,
         child: Padding(
-          padding: const EdgeInsets.all(8.0),
+          padding: const EdgeInsets.only(top: 30, left: 17),
           child: Row(
-
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              ShortcutScrollbarItem(icon: Icons.pix, label1: "Área Pix",),
+              ShortcutScrollbarItem(icon: Icons.bar_chart_outlined, label1: "Pagar",),
+              ShortcutScrollbarItem(icon: Icons.money, label1: "Transferir",),
+              ShortcutScrollbarItem(icon: Icons.money, label1: "Depositar",),
+              ShortcutScrollbarItem(icon: Icons.mobile_friendly, label1: "Recarregar", label2: "celular",),
+              ShortcutScrollbarItem(icon: Icons.monetization_on, label1: "Cobrar",),
+              ShortcutScrollbarItem(icon: Icons.heart_broken, label1: "Doação",),
+              ShortcutScrollbarItem(icon: Icons.attach_money, label1: "Transferir", label2: "Internac.",),
+              ShortcutScrollbarItem(icon: Icons.auto_graph, label1: "Investir",)
+            ],
           ),
         ),
       ),

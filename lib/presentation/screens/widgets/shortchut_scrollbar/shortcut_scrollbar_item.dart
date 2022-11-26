@@ -2,7 +2,13 @@ import 'package:flutter/material.dart';
 import '../../../themes/theme_colors.dart';
 
 class ShortcutScrollbarItem extends StatefulWidget {
-  const ShortcutScrollbarItem({Key? key}) : super(key: key);
+  final IconData icon;
+  final String label1;
+  final String? label2;
+
+  const ShortcutScrollbarItem(
+      {Key? key, required this.icon, required this.label1, this.label2})
+      : super(key: key);
 
   @override
   State<ShortcutScrollbarItem> createState() => _ShortcutScrollbarItemState();
@@ -12,20 +18,38 @@ class _ShortcutScrollbarItemState extends State<ShortcutScrollbarItem> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         RawMaterialButton(
-          onPressed: () {},
-          elevation: 2.0,
+          onPressed: () { },
+          elevation: 0,
+          disabledElevation: 0,
           fillColor: AppColor.backgroundGreyColor,
           child: Icon(
-            Icons.pix,
-            size: 35.0,
+            widget.icon,
+            size: 25.0,
           ),
-          padding: EdgeInsets.all(15.0),
+          padding: EdgeInsets.all(20.0),
           shape: CircleBorder(),
         ),
-        Text('Área Pix')
+        SizedBox(
+          height: 15,
+        ),
+        Column(
+          children: [
+            Text(
+              widget.label1,
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Text(
+              widget.label2 ?? '',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+              ),
+            )
+          ],
+        ),
       ],
     );
   }
