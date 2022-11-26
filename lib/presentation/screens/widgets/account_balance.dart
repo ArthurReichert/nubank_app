@@ -1,4 +1,4 @@
-// ignore_for_file: library_private_types_in_public_api
+// ignore_for_file: library_private_types_in_public_api, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
@@ -19,23 +19,29 @@ class _AccountBalanceState extends State<AccountBalance> {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text(
                 'Conta',
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
               ),
-              Icon(Icons.arrow_forward_ios_outlined, size: 16,),
+              Icon(
+                Icons.arrow_forward_ios_outlined,
+                size: 16,
+              ),
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 16,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Text(
+              const Text(
                 'R\$ 10.000,00',
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 20,
+                ),
               ),
             ],
           ),
