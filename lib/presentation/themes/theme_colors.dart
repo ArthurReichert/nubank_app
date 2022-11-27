@@ -14,5 +14,6 @@ class AppColor {
   //Others
   static const blackColor = Color(0XFF000000);
   static const whiteColor = Color(0xFFFFFFFF);
+  static const greyBottomNavigationBar = Color(0XFF8E919C);
 
 }

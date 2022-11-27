@@ -13,26 +13,43 @@ class MyBottomNavigationBar extends StatefulWidget {
 class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
-    return BottomNavigationBar(
-      currentIndex: 0,
-      items: const [
-        BottomNavigationBarItem(
-          icon: Icon(Icons.arrow_circle_up, color: AppColor.primaryColor,),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.attach_money, color: AppColor.blackColor,),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.shopping_bag, color: AppColor.blackColor,),
-          label: '',
-        ),
-        BottomNavigationBarItem(
-          icon: Icon(Icons.sports_soccer, color: AppColor.blackColor,),
-          label: '',
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.only(top: 8),
+      child: BottomNavigationBar(
+        type: BottomNavigationBarType.fixed,
+        backgroundColor: Colors.white.withOpacity(0.90),
+        elevation: 0,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.arrow_back_ios_rounded,
+              color: AppColor.boldTextPurpleColor,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.attach_money,
+              color: AppColor.greyBottomNavigationBar,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.shopping_bag_outlined,
+              color: AppColor.greyBottomNavigationBar,
+            ),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.sports_soccer,
+              color: AppColor.greyBottomNavigationBar,
+            ),
+            label: '',
+          ),
+        ],
+      ),
     );
   }
 }
