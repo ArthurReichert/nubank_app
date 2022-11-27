@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../../themes/theme_colors.dart';
 import '../ads_item.dart';
 
@@ -16,7 +15,7 @@ class _Ads1State extends State<Ads1> {
     return AdsItem(
       text: [
         RichText(
-          text: TextSpan(
+          text: const TextSpan(
             style: TextStyle(
               fontSize: 14,
               color: Colors.black,
@@ -53,7 +52,7 @@ class _Ads2State extends State<Ads2> {
     return AdsItem(
       text: [
         RichText(
-          text: TextSpan(
+          text: const TextSpan(
             style: TextStyle(fontSize: 14, color: Colors.black),
             children: [
               TextSpan(
@@ -80,7 +79,7 @@ class _Ads3State extends State<Ads3> {
     return AdsItem(
       text: [
         RichText(
-          text: TextSpan(
+          text: const TextSpan(
             style: TextStyle(
               fontSize: 14,
               color: Colors.black,

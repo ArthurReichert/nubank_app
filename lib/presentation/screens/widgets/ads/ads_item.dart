@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import '../../../themes/theme_colors.dart';
 
 class AdsItem extends StatefulWidget {

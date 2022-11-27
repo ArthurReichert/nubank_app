@@ -27,27 +27,27 @@ class _ShortcutScrollbarItemState extends State<ShortcutScrollbarItem> {
           hoverElevation: 0,
           highlightElevation: 0,
           fillColor: AppColor.backgroundGreyColor,
+          padding: const EdgeInsets.all(26),
+          shape: const CircleBorder(),
           child: Icon(
             widget.icon,
             size: 25.0,
           ),
-          padding: EdgeInsets.all(26),
-          shape: CircleBorder(),
         ),
-        SizedBox(
+        const SizedBox(
           height: 15,
         ),
         Column(
           children: [
             Text(
               widget.label1,
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               widget.label2 ?? '',
-              style: TextStyle(
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
               ),
             )
