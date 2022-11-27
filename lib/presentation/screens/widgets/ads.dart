@@ -25,7 +25,13 @@ class _AdsState extends State<Ads> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Ads1(),
+            SizedBox(
+              width: 10,
+            ),
             Ads2(),
+            SizedBox(
+              width: 10,
+            ),
             Ads3(),
           ],
         ),

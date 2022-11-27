@@ -31,7 +31,7 @@ class _ShortcutScrollbarItemState extends State<ShortcutScrollbarItem> {
             widget.icon,
             size: 25.0,
           ),
-          padding: EdgeInsets.all(20.0),
+          padding: EdgeInsets.all(26),
           shape: CircleBorder(),
         ),
         SizedBox(
