@@ -17,7 +17,7 @@ class _AdsState extends State<Ads> {
     return SingleChildScrollView(
       physics: BouncingScrollPhysics(),
       scrollDirection: Axis.horizontal,
-      padding: const EdgeInsets.only(left: 20, top: 15, right: 20),
+      padding: const EdgeInsets.only(left: 20, top: 15, right: 10),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
