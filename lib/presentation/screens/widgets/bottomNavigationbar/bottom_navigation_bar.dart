@@ -17,7 +17,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       padding: const EdgeInsets.only(top: 8),
       child: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
-        backgroundColor: Colors.white.withOpacity(0.90),
+        backgroundColor: Colors.white.withOpacity(0.92),
         elevation: 0,
         items: const [
           BottomNavigationBarItem(

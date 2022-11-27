@@ -25,11 +25,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       appBar: AppBar(
           elevation: 0,
           backgroundColor: AppColor.primaryColor,
-          leading: Padding(
-            padding: const EdgeInsets.only(left: 15, top: 15),
+          leading: const Padding(
+            padding: EdgeInsets.only(left: 15, top: 15),
             child: CircleAvatar(
               backgroundColor: AppColor.whiteColor,
               child: Icon(Icons.person_outline, color: AppColor.primaryColor),
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
           ),
           actions: [
             Padding(
-              padding: EdgeInsets.only(right: 20, top: 15),
+              padding: const EdgeInsets.only(right: 20, top: 15),
               child: Row(
                 children: [
                   IconButton(
@@ -69,12 +70,12 @@ class _HomePageState extends State<HomePage> {
             ),
           ],
           bottom: PreferredSize(
-            preferredSize: Size.fromHeight(65),
+            preferredSize: const Size.fromHeight(65),
             child: Padding(
               padding: const EdgeInsets.only(left: 20, bottom: 20, top: 25),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
-                children: [
+                children: const [
                   Text(
                     'Olá, Bryan',
                     style: TextStyle(
@@ -87,6 +88,7 @@ class _HomePageState extends State<HomePage> {
             ),
           )),
       body: SingleChildScrollView(
+        physics: const BouncingScrollPhysics(),
         child: Column(
           children: const [
             AccountBalance(),
@@ -104,7 +106,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: MyBottomNavigationBar(),
+      bottomNavigationBar: const MyBottomNavigationBar(),
     );
   }
 }
