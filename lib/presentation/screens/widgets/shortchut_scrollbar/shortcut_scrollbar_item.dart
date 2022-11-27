@@ -23,6 +23,9 @@ class _ShortcutScrollbarItemState extends State<ShortcutScrollbarItem> {
           onPressed: () { },
           elevation: 0,
           disabledElevation: 0,
+          focusElevation: 0,
+          hoverElevation: 0,
+          highlightElevation: 0,
           fillColor: AppColor.backgroundGreyColor,
           child: Icon(
             widget.icon,

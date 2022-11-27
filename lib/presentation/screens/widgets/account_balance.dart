@@ -13,7 +13,7 @@ class _AccountBalanceState extends State<AccountBalance> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 31, right: 27, left: 27),
+      padding: const EdgeInsets.only(top: 31, right: 27, left: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
