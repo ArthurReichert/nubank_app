@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'shortchut_scrollbar/shortcut_scrollbar_item.dart';
+import 'shortchutScrollbar/shortcut_scrollbar_item.dart';
 
 class ShortcutScrollbar extends StatefulWidget {
   const ShortcutScrollbar({Key? key}) : super(key: key);

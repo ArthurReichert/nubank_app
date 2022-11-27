@@ -4,6 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:nubank_app/presentation/screens/widgets/ads.dart';
 
 import 'widgets/account_balance.dart';
+import 'widgets/creditCard/credit_card.dart';
+import 'widgets/divider/divider.dart';
+import 'widgets/findOutMore/find_out_more.dart';
+import 'widgets/followToo/follow_too.dart';
+import 'widgets/loan/loan.dart';
 import 'widgets/my_card.dart';
 import 'widgets/shortcut_scrollbar.dart';
 import '../themes/theme_colors.dart';
@@ -23,11 +28,19 @@ class _HomePageState extends State<HomePage> {
         backgroundColor: AppColor.primaryColor,
       ),
       body: Column(
-        children: [
+        children: const [
           AccountBalance(),
           ShortcutScrollbar(),
           MyCard(),
           Ads(),
+          MyDivider(),
+          CreditCard(),
+          MyDivider(),
+          FollowToo(),
+          MyDivider(),
+          Loan(),
+          MyDivider(),
+          FindOutMore(),
         ],
       ),
     );

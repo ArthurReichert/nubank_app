@@ -12,7 +12,7 @@ class AppColor {
   static const greenColor = Color(0XFF548E70);
 
   //Others
-  static const blackColor = Color(0XFF0000);
-  static const whiteColor = Color(0xFFFFFF);
+  static const blackColor = Color(0XFF00000);
+  static const whiteColor = Color(0xFFFFFFF);
 
 }
