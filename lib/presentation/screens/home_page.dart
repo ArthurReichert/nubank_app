@@ -114,7 +114,7 @@ class _HomePageState extends State<HomePage> {
           splashColor: Colors.transparent,
           highlightColor: Colors.transparent,
         ),
-        child: MyBottomNavigationBar(),
+        child: const MyBottomNavigationBar(),
       ),
     );
   }
