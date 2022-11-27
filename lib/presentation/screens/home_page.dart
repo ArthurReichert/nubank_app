@@ -54,6 +54,7 @@ class _HomePageState extends State<HomePage> {
                     icon: const Icon(
                       Icons.question_mark,
                       color: AppColor.whiteColor,
+                      size: 20,
                     ),
                     splashRadius: 20,
                   ),
@@ -77,7 +78,7 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: const [
                   Text(
-                    'Olá, Bryan',
+                    'Olá, Usuário',
                     style: TextStyle(
                         color: AppColor.whiteColor,
                         fontWeight: FontWeight.bold,
