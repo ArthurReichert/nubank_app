@@ -87,6 +87,7 @@ class _HomePageState extends State<HomePage> {
             ),
           )),
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: const [
             AccountBalance(),
