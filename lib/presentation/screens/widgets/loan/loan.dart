@@ -12,6 +12,44 @@ class Loan extends StatefulWidget {
 class _LoanState extends State<Loan> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Padding(
+      padding: const EdgeInsets.only(left: 25, right: 27, top: 22, bottom: 22),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(bottom: 15),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: const [
+                Text(
+                  'Empréstimo',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 18,
+                  ),
+                ),
+                Icon(
+                  Icons.arrow_forward_ios_outlined,
+                  size: 16,
+                ),
+              ],
+            ),
+          ),
+          const Padding(
+            padding: EdgeInsets.only(bottom: 4),
+            child: Text(
+              'Valor disponível até',
+              style: TextStyle(fontSize: 14),
+            ),
+          ),
+          const Text(
+            'R\$ 1.000,00',
+            style: TextStyle(fontSize: 14),
+          ),
+        ],
+      ),
+    );
   }
 }

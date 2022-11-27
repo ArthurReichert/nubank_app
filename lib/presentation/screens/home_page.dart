@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:nubank_app/presentation/screens/widgets/ads.dart';
 
 import 'widgets/account_balance.dart';
+import 'widgets/bottomNavigationbar/bottom_navigation_bar.dart';
 import 'widgets/creditCard/credit_card.dart';
 import 'widgets/divider/divider.dart';
 import 'widgets/findOutMore/find_out_more.dart';
@@ -85,22 +86,25 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
           )),
-      body: Column(
-        children: const [
-          AccountBalance(),
-          ShortcutScrollbar(),
-          MyCard(),
-          Ads(),
-          MyDivider(),
-          CreditCard(),
-          MyDivider(),
-          FollowToo(),
-          MyDivider(),
-          Loan(),
-          MyDivider(),
-          FindOutMore(),
-        ],
+      body: SingleChildScrollView(
+        child: Column(
+          children: const [
+            AccountBalance(),
+            ShortcutScrollbar(),
+            MyCard(),
+            Ads(),
+            MyDivider(),
+            CreditCard(),
+            MyDivider(),
+            FollowToo(),
+            MyDivider(),
+            Loan(),
+            MyDivider(),
+            FindOutMore(),
+          ],
+        ),
       ),
+      bottomNavigationBar: MyBottomNavigationBar(),
     );
   }
 }

@@ -37,7 +37,7 @@ class _MyCardState extends State<MyCard> {
                   ),
                   Text(
                     'Meus cartões',
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.w600,),
                   ),
                 ],
               ),
