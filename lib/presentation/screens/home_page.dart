@@ -25,7 +25,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBody: true,
       appBar: AppBar(
           elevation: 0,
           backgroundColor: AppColor.primaryColor,
@@ -88,7 +87,6 @@ class _HomePageState extends State<HomePage> {
             ),
           )),
       body: SingleChildScrollView(
-        physics: const BouncingScrollPhysics(),
         child: Column(
           children: const [
             AccountBalance(),
@@ -106,8 +104,7 @@ class _HomePageState extends State<HomePage> {
           ],
         ),
       ),
-      bottomNavigationBar: const MyBottomNavigationBar(),
-
+      bottomNavigationBar: MyBottomNavigationBar(),
     );
   }
 }
