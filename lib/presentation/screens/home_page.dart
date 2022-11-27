@@ -89,24 +89,33 @@ class _HomePageState extends State<HomePage> {
           )),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
-        child: Column(
-          children: const [
-            AccountBalance(),
-            ShortcutScrollbar(),
-            MyCard(),
-            Ads(),
-            MyDivider(),
-            CreditCard(),
-            MyDivider(),
-            FollowToo(),
-            MyDivider(),
-            Loan(),
-            MyDivider(),
-            FindOutMore(),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.only(bottom: 60),
+          child: Column(
+            children: const [
+              AccountBalance(),
+              ShortcutScrollbar(),
+              MyCard(),
+              Ads(),
+              MyDivider(),
+              CreditCard(),
+              MyDivider(),
+              FollowToo(),
+              MyDivider(),
+              Loan(),
+              MyDivider(),
+              FindOutMore(),
+            ],
+          ),
         ),
       ),
-      bottomNavigationBar: const MyBottomNavigationBar(),
+      bottomNavigationBar: Theme(
+        data: ThemeData(
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
+        ),
+        child: MyBottomNavigationBar(),
+      ),
     );
   }
 }
