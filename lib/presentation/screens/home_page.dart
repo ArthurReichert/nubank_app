@@ -25,8 +25,66 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: AppColor.primaryColor,
-      ),
+          elevation: 0,
+          backgroundColor: AppColor.primaryColor,
+          leading: Padding(
+            padding: const EdgeInsets.only(left: 15, top: 15),
+            child: CircleAvatar(
+              backgroundColor: AppColor.whiteColor,
+              child: Icon(Icons.person_outline, color: AppColor.primaryColor),
+            ),
+          ),
+          actions: [
+            Padding(
+              padding: EdgeInsets.only(right: 20, top: 15),
+              child: Row(
+                children: [
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.remove_red_eye_outlined,
+                      color: AppColor.whiteColor,
+                    ),
+                    splashRadius: 20,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.question_mark,
+                      color: AppColor.whiteColor,
+                    ),
+                    splashRadius: 20,
+                  ),
+                  IconButton(
+                    onPressed: () {},
+                    icon: const Icon(
+                      Icons.person_add_outlined,
+                      color: AppColor.whiteColor,
+                    ),
+                    splashRadius: 20,
+                  ),
+                ],
+              ),
+            ),
+          ],
+          bottom: PreferredSize(
+            preferredSize: Size.fromHeight(65),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20, bottom: 20, top: 25),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.start,
+                children: [
+                  Text(
+                    'Olá, Bryan',
+                    style: TextStyle(
+                        color: AppColor.whiteColor,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 16),
+                  )
+                ],
+              ),
+            ),
+          )),
       body: Column(
         children: const [
           AccountBalance(),
