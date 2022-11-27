@@ -2,16 +2,16 @@ import 'package:flutter/material.dart';
 
 import '../../../themes/theme_colors.dart';
 
-class AddsItem extends StatefulWidget {
+class AdsItem extends StatefulWidget {
   final List<Widget> text;
 
-  const AddsItem({Key? key, required this.text}) : super(key: key);
+  const AdsItem({Key? key, required this.text}) : super(key: key);
 
   @override
-  State<AddsItem> createState() => _AddsItemState();
+  State<AdsItem> createState() => _AdsItemState();
 }
 
-class _AddsItemState extends State<AddsItem> {
+class _AdsItemState extends State<AdsItem> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(

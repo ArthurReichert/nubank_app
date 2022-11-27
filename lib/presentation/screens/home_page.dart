@@ -1,7 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:flutter/material.dart';
-import 'package:nubank_app/presentation/screens/widgets/adds.dart';
+import 'package:nubank_app/presentation/screens/widgets/ads.dart';
 
 import 'widgets/account_balance.dart';
 import 'widgets/my_card.dart';
@@ -27,7 +27,7 @@ class _HomePageState extends State<HomePage> {
           AccountBalance(),
           ShortcutScrollbar(),
           MyCard(),
-          Adds(),
+          Ads(),
         ],
       ),
     );
