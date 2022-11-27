@@ -27,67 +27,68 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       extendBody: true,
       appBar: AppBar(
-          elevation: 0,
-          backgroundColor: AppColor.primaryColor,
-          leading: const Padding(
-            padding: EdgeInsets.only(left: 15, top: 15),
-            child: CircleAvatar(
-              backgroundColor: AppColor.whiteColor,
-              child: Icon(Icons.person_outline, color: AppColor.primaryColor),
+        elevation: 0,
+        backgroundColor: AppColor.primaryColor,
+        leading: const Padding(
+          padding: EdgeInsets.only(left: 15, top: 15),
+          child: CircleAvatar(
+            backgroundColor: AppColor.whiteColor,
+            child: Icon(Icons.person_outline, color: AppColor.primaryColor),
+          ),
+        ),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20, top: 15),
+            child: Row(
+              children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.remove_red_eye_outlined,
+                    color: AppColor.whiteColor,
+                  ),
+                  splashRadius: 20,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.question_mark,
+                    color: AppColor.whiteColor,
+                    size: 20,
+                  ),
+                  splashRadius: 20,
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: const Icon(
+                    Icons.person_add_outlined,
+                    color: AppColor.whiteColor,
+                  ),
+                  splashRadius: 20,
+                ),
+              ],
             ),
           ),
-          actions: [
-            Padding(
-              padding: const EdgeInsets.only(right: 20, top: 15),
-              child: Row(
-                children: [
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.remove_red_eye_outlined,
+        ],
+        bottom: PreferredSize(
+          preferredSize: const Size.fromHeight(65),
+          child: Padding(
+            padding: const EdgeInsets.only(left: 20, bottom: 20, top: 25),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: const [
+                Text(
+                  'Olá, Usuário',
+                  style: TextStyle(
                       color: AppColor.whiteColor,
-                    ),
-                    splashRadius: 20,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.question_mark,
-                      color: AppColor.whiteColor,
-                      size: 20,
-                    ),
-                    splashRadius: 20,
-                  ),
-                  IconButton(
-                    onPressed: () {},
-                    icon: const Icon(
-                      Icons.person_add_outlined,
-                      color: AppColor.whiteColor,
-                    ),
-                    splashRadius: 20,
-                  ),
-                ],
-              ),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 16),
+                )
+              ],
             ),
-          ],
-          bottom: PreferredSize(
-            preferredSize: const Size.fromHeight(65),
-            child: Padding(
-              padding: const EdgeInsets.only(left: 20, bottom: 20, top: 25),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.start,
-                children: const [
-                  Text(
-                    'Olá, Usuário',
-                    style: TextStyle(
-                        color: AppColor.whiteColor,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 16),
-                  )
-                ],
-              ),
-            ),
-          )),
+          ),
+        ),
+      ),
       body: SingleChildScrollView(
         physics: const BouncingScrollPhysics(),
         child: Padding(
